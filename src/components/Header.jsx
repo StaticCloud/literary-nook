@@ -3,16 +3,29 @@ import styled from 'styled-components'
 const HeaderWrapper = styled.header`
     display: flex;
     height: 70px;
+    width: 100%;
+    position: fixed;
+    color: white;
+    z-index: 2;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px;
+    padding: 0 20px;
+
+    border-bottom: 1px solid white;
 
     nav { 
         display: flex;
     }
 
     nav p {
-        margin: 0 10px;
+        font-weight: bold;
+        padding: 3px 12px;
+
+        border-left: 2px dotted white;
+    }
+
+    nav p:first-child {
+        border-left: none;
     }
 `
 
