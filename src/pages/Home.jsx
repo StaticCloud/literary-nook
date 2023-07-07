@@ -1,20 +1,44 @@
+import interior from '../assets/img/interior.jpg';
 import styled from 'styled-components'
 
-const HomeWrapper = styled.section`
-    height: 100%;
+const Background = styled.div`
     width: 100%;
+    height: 100%;
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-`
+    justify-content: center;
+    background-size: cover;
+    background-position: center left;
+    background-image: url(${interior});
+
+    &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background-color: #4a873ace;
+        width: 100%;
+        height: 100%;
+    }
+
+    div {
+        z-index: 1;
+        color: white;
+    }
+
+    div h1 {
+        font-weight: bold;
+    }
+`;
 
 export default function Home() {
     return (
-        <HomeWrapper>
+        <Background>
             <div>
-                <h1>A PLACE FOR ALL YOUR RETRO GAMING NEEDS</h1>
-                <h2>Consoles, games, accessories, and even merch.</h2>
+                <h1>THE PLACE FOR ALL YOUR RETRO GAMING NEEDS</h1>
+                <p>WIP DESCRIPTION</p>
             </div>
-        </HomeWrapper>
+        </Background>
     );
 }

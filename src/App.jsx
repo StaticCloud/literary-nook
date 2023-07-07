@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Main = styled.main`
-  height: calc(100vh - 70px);
+  height: 100vh;
 `;
 
 function App() {
