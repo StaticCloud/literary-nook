@@ -17,7 +17,7 @@ const Background = styled.div`
         display: block;
         position: absolute;
         z-index: 1;
-        background-color: #4a873add;
+        background-color: #4a873ace;
         width: 100%;
         height: 100%;
     }
